@@ -15,7 +15,12 @@ module.exports = {
 	// eslint-config-airbnb-base提供的
 	// eslint-config-prettier提供的
 	// 前缀 eslint-config-, 可省略
-	extends: ['plugin:vue/vue3-strongly-recommended', 'airbnb-base', 'prettier'],
+	extends: [
+		'.eslintrc-auto-import.json',
+		'plugin:vue/vue3-strongly-recommended',
+		'airbnb-base',
+		'prettier',
+	],
 	// eslint 会对我们的代码进行检验
 	// parser的作用是将我们写的代码转换为ESTree（AST）
 	// ESLint会对ESTree进行校验
@@ -39,6 +44,7 @@ module.exports = {
 		defineEmits: 'readonly',
 		defineExpose: 'readonly',
 		withDefault: 'readonly',
+		// ElMessage: 'readonly',
 	},
 	// 插件
 	// 前缀 eslint-plugin-, 可省略
