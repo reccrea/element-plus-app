@@ -15,7 +15,7 @@
 		// 编译过程中需要引入的库文件的列表
 		"lib": ["ESNext", "DOM", "DOM.Iterable"],
 		// 默认所有可见的"@types"包会在编译过程中被包含进来
-		"types": ["vite/client"],
+		"types": ["vite/client", "element-plus/global"],
 		"skipLibCheck": true,
 		"noEmit": true,
 		// 解析非相对模块名的基准目录
